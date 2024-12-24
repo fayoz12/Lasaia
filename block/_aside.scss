@@ -1,0 +1,432 @@
+.aside {
+  width: 1240px;
+  height: 580px;
+  margin: auto;
+  
+
+  .asd_subtitle {
+    /* Product */
+
+    width: 72px;
+    height: 23px;
+
+    /* Headings/H5 - Bold 18 */
+    font-family: "Poppins";
+    font-style: normal;
+    margin: auto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+
+  .asd_glav_title {
+    /* Our popular product */
+
+    width: 440px;
+    height: 57px;
+
+    /* Headings/H2 - Bold 44 */
+    font-family: "Eudoxus Sans";
+
+    font-style: normal;
+    margin: auto;
+
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .asd_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+
+    width: 656px;
+    height: 64px;
+    margin: 14px auto;
+
+    /* Paragraph/P3 - 18 Medium */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+    text-align: center;
+
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+
+  .asd_img {
+    /* Rectangle 23 */
+
+    width: 394px;
+    height: 360px;
+  }
+
+  .asd_mini_title {
+    /* White Aesthetic Chair */
+
+    width: 346px;
+    height: 34px;
+
+    /* Headings/H3+ - Bold 26 */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+    padding: 15px 0;
+    /* identical to box height, or 34px */
+    letter-spacing: 0.01em;
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .asd_mini_title1 {
+    /* White Aesthetic Chair */
+
+    width: 346px;
+    height: 34px;
+
+    /* Headings/H3+ - Bold 26 */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+    padding: 15px 0;
+    /* identical to box height, or 34px */
+    letter-spacing: 0.01em;
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .asd_price {
+    /* $63.47 */
+
+    width: 83px;
+    height: 31px;
+
+    /* Headings/H3 - Bold 24 */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .asd_price1 {
+    /* $63.47 */
+
+    width: 83px;
+    height: 31px;
+
+    /* Headings/H3 - Bold 24 */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .asd_blok {
+    width: 394px;
+    height: 544px;
+  }
+
+  .asd_glav_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 65px;
+  }
+
+  .asd_mini_text {
+    /* Chair */
+
+    width: 47px;
+    height: 23px;
+
+    /* Headings/H5 - Bold 18 */
+    font-family: "Poppins";
+
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+
+  .asd_mini_text {
+    /* Combination of wood and wool */
+
+    width: 346px;
+    height: 32px;
+
+    /* Paragraph/P3 - 18 Medium */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+    padding: 15px 0;
+  }
+
+  .asd_mini_text1 {
+    /* Combination of wood and wool */
+
+    width: 346px;
+    height: 32px;
+
+    /* Paragraph/P3 - 18 Medium */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .aside {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+
+    margin: 550px 0px;
+
+    .asd_mini_text {
+      /* Product */
+
+      width: 56px;
+      height: 18px;
+
+      /* Headings/H6+ - Bold 14 */
+      font-family: "Poppins";
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      /* or 18px */
+      text-align: center;
+
+      /* Secondary Color */
+      color: #ffb23f;
+    }
+
+    .asd_mini_title {
+      /* Our popular product */
+
+      width: 240px;
+      height: 31px;
+
+      /* Headings/H3 - Bold 24 */
+      font-family: "Poppins";
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      /* or 31px */
+
+      /* Text Color */
+      color: #151411;
+    }
+
+    .asd_mini_text {
+      /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+
+      width: 327px;
+      height: 75px;
+
+      /* Paragraph/P1 - 14 Medium */
+      font-family: "Poppins";
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* Paragraph Color */
+      color: #afadb5;
+    }
+
+    .asd_img {
+      /* Rectangle 65 */
+
+      width: 220px;
+      height: 194px;
+    }
+
+    .asd_glav_box {
+      flex-direction: column;
+    }
+
+    .asd_subtitle {
+      /* Product */
+
+      width: 56px;
+      height: 18px;
+
+      /* Headings/H6+ - Bold 14 */
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+
+      line-height: 130%;
+      /* or 18px */
+      text-align: center;
+
+      /* Secondary Color */
+      color: #ffb23f;
+    }
+
+    .asd_glav_title {
+      /* Our popular product */
+      width: 240px;
+      height: 31px;
+
+      /* Headings/H3 - Bold 24 */
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+
+      line-height: 130%;
+      /* or 31px */
+
+      /* Text Color */
+      color: #151411;
+    }
+    .asd_text {
+      /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+
+      width: 327px;
+      height: 75px;
+
+      /* Paragraph/P1 - 14 Medium */
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* Paragraph Color */
+      color: #afadb5;
+    }
+
+    .asd_mini_text1 {
+      display: none;
+    }
+
+    .asd_mini_text {
+      /* Combination of wood and wool */
+
+      width: 220px;
+      height: 25px;
+
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 500;
+
+      font-size: 14px;
+      margin: auto;
+      line-height: 180%;
+      /* or 25px */
+
+      /* Paragraph Color */
+      color: #afadb5;
+    }
+
+    .asd_mini_title1 {
+      display: none;
+    }
+
+    .asd_mini_title {
+      /* White Aesthetic Chair */
+
+      width: 172px;
+      height: 23px;
+
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      margin: auto;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 145%;
+      /* or 23px */
+      letter-spacing: 0.01em;
+
+      /* Text Color */
+      color: #151411;
+    }
+
+    .asd_price1 {
+      display: none;
+    }
+
+    .asd_price {
+      /* $63.47 */
+
+      width: 57px;
+      height: 23px;
+
+      margin: auto;
+
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 145%;
+      /* or 23px */
+      letter-spacing: 0.01em;
+
+      /* Text Color */
+      color: #151411;
+    }
+  }
+}

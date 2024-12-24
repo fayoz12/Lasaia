@@ -1,0 +1,262 @@
+.main {
+  width: 1240px;
+  height: 580px;
+  margin: 190px auto;
+
+  .main_mini_box {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-evenly;
+  }
+
+  .main_mini_sub_title {
+    /* Benefits */
+
+    width: 74px;
+    height: 23px;
+
+    /* Headings/H5 - Bold 18 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+
+  .main_mini_title {
+    /* Benefits when using our services */
+
+    width: 427px;
+    height: 114px;
+
+    /* Headings/H2 - Bold 44 */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .main_mini_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+
+    width: 505px;
+    height: 96px;
+
+    /* Paragraph/P3 - 18 Medium */
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+
+  .main_blok {
+    /* Rectangle 10 */
+
+    width: 394px;
+    height: 285px;
+
+    /* Screen Color */
+    background: #ffffff;
+    box-shadow: 10px 4px 100px rgba(175, 173, 181, 0.1);
+  }
+
+  .main_glav_box {
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .main_blok_title {
+    /* Many Choices */
+
+    width: 346px;
+    height: 31px;
+
+    font-family: "Poppins";
+
+    font-style: normal;
+
+    font-weight: 700;
+    margin: 20px 20px;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .main_blok_text {
+    margin: 20px 20px;
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. */
+
+    width: 346px;
+    height: 96px;
+
+    font-family: "Poppins";
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+
+  .main_img {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+
+    height: 500px;
+    margin: auto;
+    margin-left: 25px;
+
+    .main_mini_sub_title {
+      /* Benefits */
+
+      width: 57px;
+      height: 18px;
+
+      /* Headings/H6+ - Bold 14 */
+      font-family: "Poppins";
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      /* or 18px */
+
+      /* Secondary Color */
+      color: #ffb23f;
+    }
+
+    .main_mini_title {
+      /* Benefits when using our services */
+
+      width: 233px;
+      height: 62px;
+
+      /* Headings/H3 - Bold 24 */
+      font-family: "Poppins";
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 15px;
+      line-height: 130%;
+      /* or 31px */
+
+      /* Text Color */
+      color: #151411;
+    }
+
+    .main_mini_box {
+      flex-direction: column;
+      align-items: start;
+      margin-left: 20px;
+    }
+
+    .main_mini_text {
+      /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+
+      width: 327px;
+      height: 75px;
+
+      font-family: "Poppins";
+
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* Paragraph Color */
+      color: #afadb5;
+    }
+
+    .main_blok {
+      /* Benefits */
+      width: 327px;
+      height: 194px;
+      margin-left: 50px;
+      margin-top: 50px;
+
+      /* Line 5 */
+
+      /* Line Color */
+      border: 1.5px solid #f3f3f3;
+    }
+
+    .main_glav_box {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .main_blok_title {
+      /* Many Choices */
+
+      width: 110px;
+      height: 21px;
+
+      /* Headings / H6 - Bold 16 */
+      font-family: "Poppins";
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 130%;
+      /* identical to box height, or 21px */
+
+      /* Text Color */
+      color: #151411;
+    }
+
+    .main_blok_text {
+      width: 295px;
+      height: 75px;
+     font-family: "Poppins";
+
+      font-style: normal;
+      padding: 5px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* Paragraph Color */
+      color: #afadb5;
+    }
+    .main_img {
+      /* Icon */
+
+      width: 44px;
+      height: 44px;
+    }
+  }
+}

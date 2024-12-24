@@ -1,0 +1,248 @@
+.article {
+  width: 1850px;
+  height: 800px;
+  margin: 290px auto;
+
+  .art_mini_title {
+    /* Our Product */
+
+    width: 108px;
+    height: 23px;
+
+    /* Headings/H5 - Bold 18 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+
+  .art_glav_title {
+    /* Crafted by talented and high quality material */
+
+    width: 511px;
+    height: 114px;
+
+    /* Headings/H2 - Bold 44 */
+    font-family: "Eudoxus Sans";
+    padding: 25px 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+
+    /* Text Color */
+    color: #151411;
+  }
+  .art_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. morbi fermentum, vivamus et accumsan dui tincidunt pulvinar */
+
+    width: 580px;
+    height: 96px;
+
+    /* Paragraph/P3 - 18 Medium */
+    font-family: "Eudoxus Sans";
+    padding: 30px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .art_btn {
+    position: absolute;
+    margin-top: 320px;
+
+    width: 170px;
+    border-radius: 20px;
+    height: 54px;
+    border: none;
+
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    text-align: center;
+
+    /* Screen Color */
+    color: #ffffff;
+
+    background: #518581;
+  }
+
+  .art_img1 {
+    width: 595px;
+    margin-top: 45px;
+    height: 260px;
+  }
+
+  .art_box_title {
+    /* 20+ */
+
+    width: 87px;
+    height: 57px;
+
+    /* Headings/H2 - Bold 44 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+
+    /* Text Color */
+    color: #151411;
+  }
+
+  .art_box_text {
+    /* Years Experience */
+
+    width: 147px;
+    height: 32px;
+
+    /* Paragraph/P3 - 18 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+
+   
+
+  .art_img {
+    width: 595px;
+    height: 510px;
+    margin-top: 25px;
+  }
+
+  .art_glav_box {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .art_mini_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .article {
+    position: absolute;
+    width: 90%;
+    height: 800px;
+    margin: 1850px 27px;
+
+    .art_img {
+      width: 327px;
+      height: 200px;
+    }
+
+    .art_img1 {
+      width: 327px;
+      height: 200px;
+      margin-top: 70px;
+    }
+
+    .art_mini_box {
+      display: none;
+    }
+    .art_img2{
+      display: none;
+    }
+
+    .art_text {
+      /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+
+      width: 327px;
+      height: 75px;
+
+      /* Paragraph/P1 - 14 Medium */
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* Paragraph Color */
+      color: #afadb5;
+    }
+
+    .art_glav_title {
+      /* Crafted by talented and high quality material */
+
+      width: 279px;
+      height: 62px;
+
+      /* Headings/H3 - Bold 24 */
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      /* or 31px */
+
+      /* Text Color */
+      color: #151411;
+    }
+
+    .art_btn {
+      position: absolute;
+      margin-bottom: 50px;
+      width: 327px;
+      height: 48px;
+
+      /* Main Color */
+      background: #518581;
+
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      /* or 18px */
+      text-align: center;
+
+      /* Screen Color */
+      color: #ffffff;
+    }
+
+    .art_mini_title {
+      /* Our Product */
+
+      width: 86px;
+      height: 18px;
+
+      font-family: "Eudoxus Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      /* or 18px */
+      letter-spacing: 0.01em;
+
+      /* Secondary Color */
+      color: #ffb23f;
+    }
+  }
+}

@@ -1,0 +1,1796 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varta:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 900;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
+.navbar {
+  /* Navbar */
+  width: 1440px;
+  height: 120px;
+  margin: 50px auto;
+}
+.navbar .nav_item_box {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.navbar .nav_glav_box {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  margin-left: 102px;
+}
+.navbar .nav_img_box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.navbar .nav_link {
+  /* Product */
+  width: 70px;
+  height: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Text Color */
+  color: #151411;
+}
+.navbar .navbar_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.navbar .navbar_burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+.navbar .navbar_burger .navbar_hr {
+  width: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    width: 100%;
+    height: 90px;
+    margin-top: 15px;
+  }
+  .navbar .navbar_list {
+    display: none;
+  }
+  .navbar .navbar_burger {
+    display: flex;
+  }
+}
+.inrto {
+  width: 1240px;
+  height: 340px;
+  margin: 120px auto;
+}
+.inrto .intro_title {
+  width: 732px;
+  height: 166px;
+  margin: 25px auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 130%;
+  /* or 83px */
+  text-align: center;
+  /* Text Color */
+  color: #151411;
+}
+.inrto .intro_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. Purus parturient viverra nunc, tortor sit laoreet. Quam tincidunt aliquam adipiscing tempor. */
+  width: 796px;
+  height: 96px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 25px auto;
+  line-height: 180%;
+  /* or 32px */
+  text-align: center;
+  /* Paragraph Color */
+  color: #afadb5;
+}
+
+@media (max-width: 480px) {
+  .inrto {
+    width: 100%;
+    height: 310px;
+    margin: auto;
+    margin-left: 25px;
+  }
+  .inrto .intro_title {
+    /* Discover Furniture With High Quality Wood */
+    width: 300px;
+    height: 68px;
+    /* Headings/H3+ - Bold 26 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 70px;
+    line-height: 130%;
+    /* or 34px */
+    text-align: center;
+    letter-spacing: 0.01em;
+    /* Text Color */
+    color: #151411;
+  }
+  .inrto .intro_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. Purus parturient viverra nunc, tortor sit laoreet. Quam tincidunt aliquam adipiscing tempor. */
+    width: 327px;
+    height: 125px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Poppins";
+    margin-left: 70px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 25px 0;
+    margin: auto;
+    line-height: 180%;
+    /* or 25px */
+    text-align: center;
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+}
+.header {
+  width: 1240px;
+  height: 480px;
+  margin: auto;
+}
+.header .head_inpt_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 810px;
+  height: 84px;
+  margin: auto;
+  /* Screen Color */
+  background: #ffffff;
+  box-shadow: 0px 4px 80px rgba(175, 173, 181, 0.2);
+}
+.header .head_bck {
+  background-image: url(../img/head_Wrapper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1240px;
+  height: 480px;
+}
+.header .head_inp {
+  width: 191px;
+  height: 32px;
+  border: none;
+}
+.header placeholder {
+  /* Search property */
+  width: 141px;
+  height: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.header .head_btn {
+  /* Search */
+  /* Headings/H5 - Bold 18 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  /* Screen Color */
+  color: #ffffff;
+  width: 170px;
+  height: 54px;
+  background: #518581;
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+    height: 310px;
+    margin-left: 25px;
+  }
+  .header .head_inpt_box {
+    /* Search Bar */
+    width: 327px;
+    height: 54px;
+  }
+  .header .head_bck {
+    background-image: url(../img/head_Wrapper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    margin: 25px auto;
+    height: 200px;
+  }
+  .header .head_btn {
+    width: 100px;
+    height: 38px;
+    /* Main Color */
+    background: #518581;
+  }
+}
+.main {
+  width: 1240px;
+  height: 580px;
+  margin: 190px auto;
+}
+.main .main_mini_box {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: space-evenly;
+}
+.main .main_mini_sub_title {
+  /* Benefits */
+  width: 74px;
+  height: 23px;
+  /* Headings/H5 - Bold 18 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  /* Secondary Color */
+  color: #ffb23f;
+}
+.main .main_mini_title {
+  /* Benefits when using our services */
+  width: 427px;
+  height: 114px;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.main .main_mini_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+  width: 505px;
+  height: 96px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.main .main_blok {
+  /* Rectangle 10 */
+  width: 394px;
+  height: 285px;
+  /* Screen Color */
+  background: #ffffff;
+  box-shadow: 10px 4px 100px rgba(175, 173, 181, 0.1);
+}
+.main .main_glav_box {
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main .main_blok_title {
+  /* Many Choices */
+  width: 346px;
+  height: 31px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  margin: 20px 20px;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+  /* Text Color */
+  color: #151411;
+}
+.main .main_blok_text {
+  margin: 20px 20px;
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. */
+  width: 346px;
+  height: 96px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.main .main_img {
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    margin-left: 25px;
+  }
+  .main .main_mini_sub_title {
+    /* Benefits */
+    width: 57px;
+    height: 18px;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+  .main .main_mini_title {
+    /* Benefits when using our services */
+    width: 233px;
+    height: 62px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 15px;
+    line-height: 130%;
+    /* or 31px */
+    /* Text Color */
+    color: #151411;
+  }
+  .main .main_mini_box {
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+  }
+  .main .main_mini_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+    width: 327px;
+    height: 75px;
+    font-family: "Poppins";
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .main .main_blok {
+    /* Benefits */
+    width: 327px;
+    height: 194px;
+    margin-left: 50px;
+    margin-top: 50px;
+    /* Line 5 */
+    /* Line Color */
+    border: 1.5px solid #f3f3f3;
+  }
+  .main .main_glav_box {
+    flex-direction: column;
+    align-items: start;
+  }
+  .main .main_blok_title {
+    /* Many Choices */
+    width: 110px;
+    height: 21px;
+    /* Headings / H6 - Bold 16 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    /* Text Color */
+    color: #151411;
+  }
+  .main .main_blok_text {
+    width: 295px;
+    height: 75px;
+    font-family: "Poppins";
+    font-style: normal;
+    padding: 5px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .main .main_img {
+    /* Icon */
+    width: 44px;
+    height: 44px;
+  }
+}
+.input {
+  position: absolute;
+  width: 1150px;
+  height: 400px;
+  margin: 1650px 570px;
+}
+.input .inpt_title {
+  /* Join with me to get special discount */
+  width: 755px;
+  height: 57px;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.input .inp_btn {
+  width: 201px;
+  height: 53px;
+  border: none;
+  /* Main Color */
+  background: #518581;
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  text-align: center;
+  /* Screen Color */
+  color: #ffffff;
+}
+.input .inp_glav_box {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 480px) {
+  .input {
+    width: 100%;
+    height: 350px;
+    margin-top: 4000px;
+    margin-left: 0px;
+  }
+  .input .inpt_title {
+    /* Join with me for get special discount */
+    width: 313px;
+    height: 62px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Eudoxus Sans";
+    margin-left: 125px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    /* Text Color */
+    color: #151411;
+  }
+  .input .inp_btn {
+    /* Frame 162718 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 54px;
+    gap: 10px;
+    width: 180px;
+    height: 48px;
+    margin-top: 50px;
+    /* Main Color */
+    background: #518581;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    /* or 18px */
+    text-align: center;
+    /* Screen Color */
+    color: #ffffff;
+  }
+  .input .inp_glav_box {
+    flex-direction: column;
+  }
+}
+.comment {
+  position: absolute;
+  width: 1240px;
+  height: 480px;
+  background-color: rgba(175, 173, 181, 0.1);
+  margin-left: 550px;
+}
+.comment .comment_subtitle {
+  /* Testimonials */
+  width: 109px;
+  height: 23px;
+  /* Headings/H5 - Bold 18 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  margin: auto;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  /* Secondary Color */
+  color: #ffb23f;
+}
+.comment .coomment_title {
+  /* What our customer say */
+  width: 489px;
+  height: 57px;
+  margin: auto;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.comment .comment_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+  width: 656px;
+  height: 64px;
+  margin: 25px auto;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  text-align: center;
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.comment .comment_left_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. */
+  width: 497px;
+  height: 64px;
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.comment .comment_name {
+  /* Janne Cooper */
+  width: 134px;
+  height: 26px;
+  /* Headings/H4 - Bold 20 */
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 7px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  /* identical to box height, or 26px */
+  /* Text Color */
+  color: #151411;
+}
+.comment .comment_glav_box {
+  margin-top: 100px;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.comment .comment_name_box {
+  margin-top: 15px;
+  box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .comment {
+    width: 90%;
+    margin: 2550px 27px;
+    height: 580px;
+  }
+  .comment .comment_subtitle {
+    /* Testimonials */
+    width: 85px;
+    height: 18px;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    text-align: center;
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+  .comment .comment_right {
+    display: none;
+  }
+  .comment .coomment_title {
+    /* What our customer say */
+    width: 267px;
+    height: 31px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    text-align: center;
+    /* Text Color */
+    color: #151411;
+  }
+  .comment .comment_text {
+    width: 327px;
+    height: 75px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .comment .comment_glav_box {
+    /* Testimonial */
+    box-shadow: 5px 5px #afadb5;
+    width: 327px;
+    height: 205px;
+  }
+  .comment .comment_left_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. */
+    width: 295px;
+    height: 75px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .comment .comment_name {
+    /* Janne Cooper */
+    width: 94px;
+    height: 18px;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 130%;
+    /* or 18px */
+    /* Text Color */
+    color: #151411;
+  }
+}
+.article {
+  width: 1850px;
+  height: 800px;
+  margin: 290px auto;
+}
+.article .art_mini_title {
+  /* Our Product */
+  width: 108px;
+  height: 23px;
+  /* Headings/H5 - Bold 18 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  /* Secondary Color */
+  color: #ffb23f;
+}
+.article .art_glav_title {
+  /* Crafted by talented and high quality material */
+  width: 511px;
+  height: 114px;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Eudoxus Sans";
+  padding: 25px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.article .art_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. morbi fermentum, vivamus et accumsan dui tincidunt pulvinar */
+  width: 580px;
+  height: 96px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Eudoxus Sans";
+  padding: 30px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.article .art_btn {
+  position: absolute;
+  margin-top: 320px;
+  width: 170px;
+  border-radius: 20px;
+  height: 54px;
+  border: none;
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  text-align: center;
+  /* Screen Color */
+  color: #ffffff;
+  background: #518581;
+}
+.article .art_img1 {
+  width: 595px;
+  margin-top: 45px;
+  height: 260px;
+}
+.article .art_box_title {
+  /* 20+ */
+  width: 87px;
+  height: 57px;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.article .art_box_text {
+  /* Years Experience */
+  width: 147px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.article .art_img {
+  width: 595px;
+  height: 510px;
+  margin-top: 25px;
+}
+.article .art_glav_box {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.article .art_mini_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .article {
+    position: absolute;
+    width: 90%;
+    height: 800px;
+    margin: 1850px 27px;
+  }
+  .article .art_img {
+    width: 327px;
+    height: 200px;
+  }
+  .article .art_img1 {
+    width: 327px;
+    height: 200px;
+    margin-top: 70px;
+  }
+  .article .art_mini_box {
+    display: none;
+  }
+  .article .art_img2 {
+    display: none;
+  }
+  .article .art_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+    width: 327px;
+    height: 75px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .article .art_glav_title {
+    /* Crafted by talented and high quality material */
+    width: 279px;
+    height: 62px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    /* Text Color */
+    color: #151411;
+  }
+  .article .art_btn {
+    position: absolute;
+    margin-bottom: 50px;
+    width: 327px;
+    height: 48px;
+    /* Main Color */
+    background: #518581;
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    text-align: center;
+    /* Screen Color */
+    color: #ffffff;
+  }
+  .article .art_mini_title {
+    /* Our Product */
+    width: 86px;
+    height: 18px;
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    letter-spacing: 0.01em;
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+}
+.aside {
+  width: 1240px;
+  height: 580px;
+  margin: auto;
+}
+.aside .asd_subtitle {
+  /* Product */
+  width: 72px;
+  height: 23px;
+  /* Headings/H5 - Bold 18 */
+  font-family: "Poppins";
+  font-style: normal;
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  /* Secondary Color */
+  color: #ffb23f;
+}
+.aside .asd_glav_title {
+  /* Our popular product */
+  width: 440px;
+  height: 57px;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  margin: auto;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.aside .asd_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+  width: 656px;
+  height: 64px;
+  margin: 14px auto;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  text-align: center;
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.aside .asd_img {
+  /* Rectangle 23 */
+  width: 394px;
+  height: 360px;
+}
+.aside .asd_mini_title {
+  /* White Aesthetic Chair */
+  width: 346px;
+  height: 34px;
+  /* Headings/H3+ - Bold 26 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
+  padding: 15px 0;
+  /* identical to box height, or 34px */
+  letter-spacing: 0.01em;
+  /* Text Color */
+  color: #151411;
+}
+.aside .asd_mini_title1 {
+  /* White Aesthetic Chair */
+  width: 346px;
+  height: 34px;
+  /* Headings/H3+ - Bold 26 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
+  padding: 15px 0;
+  /* identical to box height, or 34px */
+  letter-spacing: 0.01em;
+  /* Text Color */
+  color: #151411;
+}
+.aside .asd_price {
+  /* $63.47 */
+  width: 83px;
+  height: 31px;
+  /* Headings/H3 - Bold 24 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+  /* Text Color */
+  color: #151411;
+}
+.aside .asd_price1 {
+  /* $63.47 */
+  width: 83px;
+  height: 31px;
+  /* Headings/H3 - Bold 24 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+  /* Text Color */
+  color: #151411;
+}
+.aside .asd_blok {
+  width: 394px;
+  height: 544px;
+}
+.aside .asd_glav_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 65px;
+}
+.aside .asd_mini_text {
+  /* Chair */
+  width: 47px;
+  height: 23px;
+  /* Headings/H5 - Bold 18 */
+  font-family: "Poppins";
+  padding: 15px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.aside .asd_mini_text {
+  /* Combination of wood and wool */
+  width: 346px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+  padding: 15px 0;
+}
+.aside .asd_mini_text1 {
+  /* Combination of wood and wool */
+  width: 346px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+  padding: 15px 0;
+}
+
+@media (max-width: 480px) {
+  .aside {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    margin: 550px 0px;
+  }
+  .aside .asd_mini_text {
+    /* Product */
+    width: 56px;
+    height: 18px;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    text-align: center;
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+  .aside .asd_mini_title {
+    /* Our popular product */
+    width: 240px;
+    height: 31px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    /* Text Color */
+    color: #151411;
+  }
+  .aside .asd_mini_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+    width: 327px;
+    height: 75px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .aside .asd_img {
+    /* Rectangle 65 */
+    width: 220px;
+    height: 194px;
+  }
+  .aside .asd_glav_box {
+    flex-direction: column;
+  }
+  .aside .asd_subtitle {
+    /* Product */
+    width: 56px;
+    height: 18px;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    text-align: center;
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+  .aside .asd_glav_title {
+    /* Our popular product */
+    width: 240px;
+    height: 31px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+    /* or 31px */
+    /* Text Color */
+    color: #151411;
+  }
+  .aside .asd_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient. */
+    width: 327px;
+    height: 75px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .aside .asd_mini_text1 {
+    display: none;
+  }
+  .aside .asd_mini_text {
+    /* Combination of wood and wool */
+    width: 220px;
+    height: 25px;
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .aside .asd_mini_title1 {
+    display: none;
+  }
+  .aside .asd_mini_title {
+    /* White Aesthetic Chair */
+    width: 172px;
+    height: 23px;
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 145%;
+    /* or 23px */
+    letter-spacing: 0.01em;
+    /* Text Color */
+    color: #151411;
+  }
+  .aside .asd_price1 {
+    display: none;
+  }
+  .aside .asd_price {
+    /* $63.47 */
+    width: 57px;
+    height: 23px;
+    margin: auto;
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 145%;
+    /* or 23px */
+    letter-spacing: 0.01em;
+    /* Text Color */
+    color: #151411;
+  }
+}
+.best {
+  position: absolute;
+  width: 1850px;
+  height: 945px;
+  margin: 650px 280px;
+}
+.best .best_glav_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.best .best_subtitle {
+  /* Articles */
+  width: 68px;
+  height: 23px;
+  /* Headings/H5 - Bold 18 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  /* Secondary Color */
+  color: #ffb23f;
+}
+.best .best_glav_title {
+  /* The best furniture comes from Lalasia */
+  width: 544px;
+  height: 114px;
+  /* Headings/H2 - Bold 44 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* Text Color */
+  color: #151411;
+}
+.best .best_text {
+  /* Pellentesque etiam blandit in tincidunt at donec. */
+  width: 544px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.best .best_bck {
+  background-image: url("../img/best_wrapper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 490px;
+  height: 590px;
+}
+.best .best_bck .best_bck_subtitle {
+  /* Tips and Trick */
+  width: 114px;
+  height: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  /* or 32px */
+  /* Screen Color */
+  padding: 0 20px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.best .best_bck .best_bck_glav_title {
+  /* Create Cozy Dinning Room Vibes */
+  width: 419px;
+  height: 34px;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  /* identical to box height, or 34px */
+  letter-spacing: 0.01em;
+  /* Screen Color */
+  color: #ffffff;
+  /* Inside auto layout */
+}
+.best .best_bck .best_bck_text {
+  /* Decorating with neutrals brings balance to the dining room. With eclectic decoration on the sides, Caruso Dining Table and Cyrillo Dining Chairs elevate the tonal base of the room. The modern furniture set gives personality to any space in all types of architecture.‎ The wide volume enables everyone to sit back and relax, be it in the dining room, conference, or office. */
+  width: 530px;
+  height: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 20px;
+  line-height: 180%;
+  /* or 32px */
+  /* Screen Color */
+  color: #ffffff;
+  opacity: 0.7;
+}
+.best .best_bck .best_btn {
+  /* Read More */
+  width: 93px;
+  height: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Screen Color */
+  background-color: inherit;
+  border: none;
+  /* Screen Color */
+  color: #ffffff;
+}
+.best .best_bck .best_bck_box {
+  position: absolute;
+  margin-top: 450px;
+  height: 150px;
+}
+.best .mini_text {
+  /* Tips and Trick */
+  width: 114px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  padding: 25px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.best .mini_title {
+  /* 6 ways to give your home minimalistic vibes */
+  width: 318px;
+  height: 62px;
+  /* Headings/H3 - Bold 24 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  padding: 25px 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+  /* Text Color */
+  color: #151411;
+}
+.best .mini_text2 {
+  /* Pellentesque etiam blandit in tincidunt at donec. Eget ipsum . */
+  width: 329px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 25px 20px;
+  line-height: 180%;
+  /* or 32px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.best .best_right_mini_box {
+  width: 610px;
+  margin-top: 50px;
+  padding: 0px 25px;
+  height: 260px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.best .mini_info_box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.best .mini_name_box {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.best .mini_info_title {
+  /* By Kim Gurameh */
+  width: 112px;
+  height: 18px;
+  /* Headings/H6+ - Bold 14 */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  /* Text Color */
+  color: #151411;
+}
+.best .mini_info_text {
+  /* Friday, 1 April 2022 */
+  width: 123px;
+  height: 25px;
+  margin-top: 70px;
+  /* Paragraph/P1 - 14 Medium */
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  /* or 25px */
+  /* Paragraph Color */
+  color: #afadb5;
+}
+.best .best_right_img {
+  /* Rectangle 20 */
+  width: 260px;
+  height: 260px;
+}
+
+@media (max-width: 480px) {
+  .best {
+    width: 100%;
+    margin-top: 3200px;
+    margin-left: 0px;
+    height: 500px;
+  }
+  .best .best_bck_glav_title {
+    display: none;
+  }
+  .best .best_subtitle {
+    /* Articles */
+    width: 53px;
+    height: 18px;
+    /* Headings/H6+ - Bold 14 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    /* Secondary Color */
+    color: #ffb23f;
+  }
+  .best .best_glav_title {
+    /* The best furniture comes from Lalasia */
+    width: 289px;
+    height: 62px;
+    /* Headings/H3 - Bold 24 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    /* Text Color */
+    color: #151411;
+  }
+  .best .best_text {
+    /* Pellentesque etiam blandit in tincidunt at donec. */
+    width: 327px;
+    height: 25px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .best .best_bck {
+    background-image: url("../img/best_bck_wrapper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 327px;
+    height: 200px;
+  }
+  .best .best_bck_subtitle {
+    display: none;
+  }
+  .best .best_glav_title {
+    /* Create Cozy Dinning Room Vibes */
+    width: 289px;
+    height: 21px;
+    display: none;
+    /* Headings / H6 - Bold 16 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    /* Screen Color */
+    color: #ffffff;
+  }
+  .best .best_bck_text {
+    /* Decorating with neutrals brings balance to the dining room. With eclectic decoration on the sides, Caruso Dining Table and Cyrillo Dining Chairs elevate the tonal base of the room. The modern furniture set gives personality to any space in all types of architecture.‎ The wide volume enables everyone to sit back and relax, be it in the dining room, conference, or office. */
+    width: 289px;
+    display: none;
+    height: 25px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Screen Color */
+    color: #ffffff;
+  }
+  .best .best_btn {
+    /* Read More */
+    width: 63px;
+    height: 22px;
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    /* Screen Color */
+    color: #ffffff;
+  }
+  .best .best_glav_box {
+    flex-direction: column;
+  }
+  .best .mini_info_title {
+    /* By Michaela Augus */
+    /* Label / L1 - 12 Bold */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    /* Text Color */
+    color: #151411;
+  }
+  .best .mini_name_box {
+    position: absolute;
+    margin: 0;
+  }
+  .best .best_right_mini_box {
+    width: 203px;
+    height: 150px;
+  }
+  .best .mini_text {
+    /* Tips and Trick */
+    /* Label / L1 - 12 Bold */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .best .mini_text2 {
+    /* Tips and Trick */
+    /* Label / L1 - 12 Bold */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    display: none;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .best .mini_title {
+    /* 6 ways to give your home minimalistic vibes */
+    width: 203px;
+    height: 42px;
+    /* Headings / H6 - Bold 16 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 25px 0;
+    line-height: 130%;
+    /* or 21px */
+    /* Text Color */
+    color: #151411;
+  }
+  .best .mini_info_text {
+    display: none;
+  }
+  .best .best_btn {
+    display: none;
+  }
+  .best .best_info {
+    width: 18px;
+    margin: 50px auto;
+    height: 18px;
+  }
+}
+.footer {
+  position: absolute;
+  width: 1500px;
+  height: 350px;
+  margin-top: 1950px;
+  margin-left: 450px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.footer .footer_text {
+  /* Lalasia is digital agency that help you make better experience iaculis cras in. */
+  width: 505px;
+  height: 64px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Text Color */
+  color: #151411;
+}
+.footer .footer_title {
+  /* Product */
+  width: 80px;
+  height: 26px;
+  /* Headings/H4 - Bold 20 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  /* identical to box height, or 26px */
+  /* Text Color */
+  color: #151411;
+}
+.footer .footer_item {
+  /* Best Selling */
+  margin-top: 15px;
+  width: 101px;
+  height: 32px;
+  /* Paragraph/P3 - 18 Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  /* Text Color */
+  color: #151411;
+}
+.footer .footer_right_glav_box {
+  display: flex;
+  margin: 50px;
+  width: 340px;
+  height: 230px;
+  align-items: center;
+  gap: 50px;
+}
+.footer .footer_glav_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .footer_mini_box {
+  width: 120px;
+  height: 190px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+    margin-left: 0px;
+    height: 500px;
+    margin-top: 4400px;
+  }
+  .footer .footer_glav_box {
+    flex-direction: column;
+  }
+  .footer .footer_text {
+    /* Lalasia is digital agency that help you make better experience iaculis cras in. */
+    width: 327px;
+    height: 50px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+  .footer .footer_title {
+    /* Product */
+    width: 64px;
+    height: 21px;
+    /* Headings / H6 - Bold 16 */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    /* Text Color */
+    color: #151411;
+  }
+  .footer .footer_item {
+    /* New Arrivals */
+    width: 82px;
+    height: 25px;
+    /* Paragraph/P1 - 14 Medium */
+    font-family: "Eudoxus Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    /* Paragraph Color */
+    color: #afadb5;
+  }
+}/*# sourceMappingURL=style.css.map */
